@@ -1,0 +1,9 @@
+$border-color: rgba(255, 255, 255, .1);
+$td-color: $text_c2;
+$tr-background-color: lighten($bg_table_c1, 5%);
+$tr-hover-background-color: lighten($bg_table_c1, 5%);
+$thead-background-color: lighten($bg_table_c1, 5%);
+$thead-color: $text_c2;
+$checkbox-border-color: #4A6C97;
+
+@import './default.scss';

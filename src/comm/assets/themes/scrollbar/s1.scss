@@ -1,0 +1,16 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    ::-webkit-scrollbar:vertical {
+        width: 5px;
+        height: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        /*滚动条里面小方块*/
+        display: block;
+    }
+
+    ::-webkit-scrollbar-track:vertical {
+        display: none;
+    }
+}

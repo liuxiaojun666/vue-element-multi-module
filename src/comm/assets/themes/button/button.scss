@@ -1,0 +1,83 @@
+.el-button--small {
+    border-radius: 2px;
+}
+
+// 确定  查询  搜索
+.el-button--b1 {
+    color: $text_c0;
+    background-color: $button_c0;
+    border-color: $button_c0;
+
+    &:hover,
+    &:focus {
+        background: mix(#fff, $button_c0, 20%);
+        border-color: mix(#fff, $button_c0, 20%);
+        color: $text_c0;
+    }
+}
+
+// 取消  关闭
+.el-button--b2 {
+    color: #606266;
+    background-color: #FFFFFF;
+    border-color: #DCDFE6;
+
+    &:hover,
+    &:focus {
+        color: #1caf9a;
+        border-color: #bbe7e1;
+        background-color: #e8f7f5;
+    }
+}
+
+// 重置
+.el-button--b3 {
+    background-color: $button_c1;
+    border-color: $button_c1;
+    color: $text_c0;
+
+    &:hover,
+    &:focus {
+        background: mix(#fff, $button_c1, 20%);
+        border-color: mix(#fff, $button_c1, 20%);
+        color: $text_c0;
+    }
+}
+
+// 取消  关闭
+.el-button--b4 {
+    color: #fff;
+    background-color: $text_c3;
+    border-color: $text_c3;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $text_c3;
+        border-color: $text_c3;
+    }
+}
+
+// 导出
+.el-button--b5 {
+    color: #fff;
+    background-color: #5E67E8;
+    border-color: #5E67E8;
+
+    &:hover,
+    &:focus {
+        background: mix(#fff, #5E67E8, 20%);
+        border-color: mix(#fff, #5E67E8, 20%);
+        color: $text_c0;
+    }
+}
+
+// 文字按钮 默认
+.el-button--text {
+    color: mix(#fff, $button_c0, 20%);
+
+    &:hover,
+    &:focus {
+        color: mix(#fff, $button_c0, 30%);
+    }
+}

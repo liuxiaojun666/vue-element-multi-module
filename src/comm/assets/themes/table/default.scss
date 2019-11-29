@@ -1,0 +1,102 @@
+.el-table {
+    @include c(background-color, transparent);
+    @include c(border-color, $border-color);
+
+    &.el-table--scrollable-y {
+        border-bottom: 1px solid;
+        @include c(border-bottom-color, $border-color);
+    }
+
+    .row-style {
+        @include c(background-color, $tr-background-color);
+        @include c(color, $td-color);
+
+        &:hover,
+        &.hover-row {
+            @include c(background-color, $tr-hover-background-color);
+
+            td {
+                @include c(background-color, transparent);
+            }
+        }
+
+        &.expanded+tr {
+            @include c(background-color, $tr-hover-background-color);
+
+            td.el-table__expanded-cell {
+                @include c(background-color, $tr-hover-background-color);
+                @include c(border-right-color, $border-color);
+                @include c(border-bottom-color, $border-color);
+
+                &:hover {
+                    background-color: inherit !important;
+                }
+            }
+        }
+    }
+
+
+    .cell-style {
+        @include c(border-color, $border-color);
+    }
+
+    .header-row-style {
+        @include c(background-color, $thead-background-color);
+        @include c(color, $thead-color);
+    }
+
+    .header-cell-style {
+        @include c(border-color, $border-color);
+        text-align: center;
+        background-color: inherit;
+    }
+
+    .el-table__empty-block {
+        border-right: 1px solid;
+        @include c(border-right-color, $border-color);
+        border-bottom: 1px solid;
+        @include c(border-bottom-color, $border-color);
+
+        .el-table__empty-text {
+            @include c(color, $td-color);
+        }
+    }
+
+    &:not(.el-table--border) {
+
+        th,
+        td {
+            border-right: none;
+        }
+    }
+
+    .el-checkbox__inner {
+        background-color: transparent;
+        @include c(border-color, $checkbox-border-color);
+    }
+
+    .is-checked,
+    .is-indeterminate {
+        .el-checkbox__inner {
+            @include c(border-color, transparent);
+        }
+    }
+}
+
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+    background-color: initial;
+}
+
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+    background-color: initial;
+}
+
+.el-table__fixed-right,
+.el-table__fixed {
+    .el-table__fixed-body-wrapper {
+        bottom: 0 !important;
+    }
+}

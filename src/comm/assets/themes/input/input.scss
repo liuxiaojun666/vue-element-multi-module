@@ -1,0 +1,12 @@
+.input-i1,
+.input-i1.el-input__inner,
+.input-i1 input.el-input__inner,
+.el-select.input-i1 input.el-input__inner,
+.input-i1.el-textarea__inner,
+.input-i1 input.el-textarea__inner,
+.el-select.input-i1 input.el-textarea__inner
+{
+    @include c(background-color, $bg_input_c1);
+    @include c(border-color, $line_c1);
+    @include c(color, $text_c0);
+}

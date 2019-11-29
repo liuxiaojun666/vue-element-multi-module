@@ -1,0 +1,15 @@
+.el-select {
+
+    &.s1 {
+        .el-tag.el-tag--info {
+            background-color: $bg_c1;
+            border-color: $bg_c1;
+            color: $text_c0;
+        }
+
+        .el-tag__close.el-icon-close {
+            background-color: transparent;
+            color: $text_c0;
+        }
+    }
+}

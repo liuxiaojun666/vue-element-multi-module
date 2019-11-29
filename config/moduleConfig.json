@@ -1,0 +1,9 @@
+[
+	{
+		"name": "$template",
+		"proxyTarget": "http://www.abc.com"
+	},
+	{
+		"name": "test1"
+	}
+]

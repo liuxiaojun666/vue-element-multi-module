@@ -1,0 +1,15 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    ::-webkit-scrollbar:vertical {
+        width: 0;
+        height: 0;
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track:vertical {
+        display: none;
+    }
+}

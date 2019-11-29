@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@mixin c($attr, $color-list) {
+    @for $i from 1 to length($theme)+1 {
+        [data-theme="#{nth($theme, $i)}"] & {
+            #{$attr}: nth($color-list, $i);
+        }
+    }
+}
+
+// 背景图
+@mixin bgi($frist, $last) {
+    @for $i from 1 to length($theme)+1 {
+        [data-theme="#{nth($theme, $i)}"] & {
+            background-image: url("#{$frist}#{nth($theme, $i)}#{$last}");
+        }
+    }
+}

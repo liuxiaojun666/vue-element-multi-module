@@ -1,0 +1,17 @@
+$popover-bgcolor: $bg_c1;
+$popover-color: #fff;
+
+.el-popover {
+    background-color: $popover-bgcolor;
+    border-color: $popover-bgcolor;
+    color: $popover-color;
+    border-radius: 2px;
+
+    .popover-content + .popper__arrow {
+        border-bottom-color: $popover-bgcolor !important;
+
+        &::after {
+            border-bottom-color: $popover-bgcolor !important;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    ::-webkit-scrollbar:vertical {
+        width: 0px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb:vertical {
+        /*滚动条里面小方块*/
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track:vertical {
+        display: none;
+    }
+
+    .el-table__fixed,
+    .el-table__fixed-right {
+        bottom: 5px !important;
+    }
+
+    .el-table.el-table--scrollable-x.el-table--scrollable-y .el-table__body-wrapper.is-scrolling-left,
+    .el-table.el-table--scrollable-x.el-table--scrollable-y .el-table__body-wrapper.is-scrolling-middle,
+    .el-table.el-table--scrollable-x.el-table--scrollable-y .el-table__body-wrapper.is-scrolling-right {
+        border-bottom: 2px solid transparent;
+    }
+}
+
+@-moz-document url-prefix() {
+
+    .el-table__footer-wrapper,
+    .el-table__header-wrapper {
+        overflow-y: scroll !important;
+        width: calc(100% + 35px) !important;
+    }
+
+    .el-table__footer-wrapper table,
+    .el-table__header-wrapper table {
+        width: 100% !important;
+    }
+
+    .el-table__body-wrapper {
+        overflow-y: scroll !important;
+        width: calc(100% + 35px) !important;
+    }
+
+    .el-table__body-wrapper table {
+        width: 100% !important;
+    }
+
+    .el-table__fixed-header-wrapper table,
+    .el-table__fixed-body-wrapper table {
+        width: calc(100% + 17px) !important;
+    }
+
+    .el-table--scrollable-x .el-table__fixed {
+        left: -1px;
+    }
+
+    .el-table--scrollable-y .el-table__fixed-right {
+        right: 0 !important;
+    }
+
+    .el-table--scrollable-y .el-table__footer-wrapper table,
+    .el-table--scrollable-y .el-table__header-wrapper table {
+        width: calc(100% + 17px) !important;
+    }
+}
